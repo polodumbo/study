@@ -15,9 +15,5 @@ public class ArTest {
 //		for (int i = 0; i < arData.length; i++) {
 //			System.out.println(arData[i]);
 //		}
-		
-//		for (int i = 0; i < arData.length; i++) {
-//			System.out.println(arData[i]);
-//		}
 	}
 }
