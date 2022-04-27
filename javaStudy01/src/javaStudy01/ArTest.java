@@ -1,4 +1,4 @@
-package javaStudy01;
+package day06;
 
 import java.util.Scanner;
 
@@ -9,11 +9,9 @@ public class ArTest {
 		System.out.println(arData);
 		
 		// 5, 4, 3, 2, 1 넣고 출력하기
-//		for (int i = 0; i < arData.length; i++) {
-//			arData[i] = 5 - i;
-//		}
-//		for (int i = 0; i < arData.length; i++) {
-//			System.out.println(arData[i]);
-//		}
+		for (int i = 0; i < arData.length; i++) {
+			arData[i] = 5 - i;
+			System.out.println(arData[i]);
+		}
 	}
 }
