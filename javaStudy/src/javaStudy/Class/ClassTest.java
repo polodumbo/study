@@ -1,6 +1,6 @@
 package javaStudy.Class;
 
-class A {
+class C {
 	int data = 100;
 	
 	void printData() {
@@ -10,14 +10,14 @@ class A {
 
 public class ClassTest {
 	public static void main(String[] args) {
-		A a = new A();
-		A a2 = new A();
+		C c1 = new C();
+		C c2 = new C();
 		
-		System.out.println(a);	// a의 주소값
-		a.data = 200;
-		a.printData();	// 200
+		System.out.println(c1);	// a의 주소값
+		c1.data = 200;
+		c1.printData();	// 200
 		
-		a2.data = 300;
-		a2.printData();	// 300
+		c2.data = 300;
+		c2.printData();	// 300
 	}
 }

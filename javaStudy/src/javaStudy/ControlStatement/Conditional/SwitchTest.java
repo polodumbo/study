@@ -1,4 +1,4 @@
-package javaStudy.ControlStatement.Loop;
+package javaStudy.ControlStatement.Conditional;
 
 import java.util.Scanner;
 
