@@ -1,0 +1,78 @@
+Animal
+ String name
+ String type
+ String tool
+ void action()  (+심화)
+	tool이 도끼라면
+		나무베기
+	tool이 낚시대라면
+		낚시하기
+	tool이 삽이라면
+		땅파기
+	tool이 없다면
+		나무 흔들기
+ void hello()
+	안녕 ㅎㅎ
+
+Hamster
+ String name
+ String type
+ String tool
+ void action()
+	tool이 도끼라면
+		나무베기
+	tool이 낚시대라면
+		낚시하기
+	tool이 삽이라면
+		땅파기
+	tool이 없다면
+		나무 흔들기
+ void hello()
+	안녕 찍찍
+
+Bird
+ String name
+ String type
+ String tool
+ void action()
+	tool이 도끼라면
+		나무베기
+	tool이 낚시대라면
+		낚시하기
+	tool이 삽이라면
+		땅파기
+	tool이 없다면
+		나무 흔들기
+ void hello()
+	안녕 짹짹
+
+Cat
+ String name
+ String type
+ String tool
+ void action()
+	tool이 도끼라면
+		나무베기
+	tool이 낚시대라면
+		낚시하기
+	tool이 삽이라면
+		땅파기
+	tool이 없다면
+		나무 흔들기
+ void hello()
+	안녕 야옹
+
+main(){
+ Hamster ham=new Hamster("뽀야미",삽);
+	// 뽀야미,햄스터,삽
+ Bird bird=new Bird("문대");
+	// 문대,새,x
+ Cat cat=new Cat("1호",낚시대);
+	// 1호,고양이,낚시대
+}
+
+요구조건
+1. Animal을 부모로 하는 자식 클래스 Hamster,Bird,Cat 클래스를 작성하세요.
+2. Animal,Hamster,Bird,Cat 클래스는 생성자를 2개 가지고있습니다.
+3. 생성자는 오버로딩, 메서드는 오버라이딩이 적용되어있으니 코드 작성시 참고하세요.
+(+심화) 수업중 언급되지않은 부분도 이용해야합니다.
