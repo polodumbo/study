@@ -1,0 +1,49 @@
+class Person
+ String name;
+
+class Card
+ String name;
+ int bal;
+ void pay(int money)
+
+class Credit
+ int limit;
+ void pay(int money)
+	limit보다 큰 돈은 결제 불가능
+
+class Check
+ int point;
+ void pay(int money)
+	결제금액의 절반만큼 point가 쌓임
+
+class Bus
+ int age;
+ void pay()
+	10대는 1000원
+	20대이상은 2000원
+	10대미만,70대이상은 0원
+	 ...이 결제됨
+
+main(){
+Credit("홍길동",10000,20000)
+	// 홍길동님 신용카드 잔액 10000원 한도 20000원
+Credit("홍길동",10000)
+	// 홍길동님 신용카드 잔액 10000원 한도 100원
+Check("홍길동",10000)
+	// 홍길동님 체크카드 잔액 10000원 포인트 0원
+Bus("홍길동",10000,11)
+	// 홍길동님 버스카드 잔액 10000원 나이 11세
+Bus("홍길동",10000)
+	// 홍길동님 버스카드 잔액 10000원 나이 20세
+}
+
+추가 요구조건
+	1. 카드끼리 비교했을때, "카드 주인의 이름"이 서로 같다면 같은 카드로 인식함
+	2. 비교가 올바르지 못하다면, "올바르지않습니다..."라고 출력
+		ex) Credit c를 Person p와 비교: c.equals(p)
+	3. syso(b1) 등을 수행했을때, // 주석의 문장이 출력되도록 코드를 작성할 것
+	4. 위의 예시에 등장하는 카드 5개를 모두 배열에 저장할 것
+
+
+
+
