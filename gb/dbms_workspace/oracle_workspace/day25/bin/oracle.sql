@@ -1,0 +1,102 @@
+SELECT * FROM USER_TABLES;
+
+-- DDL(데이터 정의어)
+-- 테이블(DB, ArrayList) 생성
+CREATE TABLE MEMBER(
+--  필드(칼럼)명 데이터타입 제약조건
+	ID VARCHAR(15) PRIMARY KEY,
+	PW VARCHAR(20) NOT NULL,
+	NAME VARCHAR(10) NOT NULL
+);
+
+-- 테이블 삭제
+DROP TABLE MEMBER;
+
+-- DML(데이터 조작어)
+-- 		데이터 한 개 한 개와 관련된 처리를 수행
+-- C
+INSERT INTO MEMBER VALUES('admin', '1234', '관리자');
+INSERT INTO MEMBER (ID, PW, NAME) VALUES('hong', '1234', '홍길동');
+
+-- U
+UPDATE MEMBER SET PW = '4444' WHERE ID = 'admin';
+								-- WHERE절 == 조건절
+								
+-- D
+DELETE FROM MEMBER WHERE ID = 'hong';
+
+-- R
+SELECT * FROM MEMBER;
+SELECT NAME FROM MEMBER;
+SELECT ID, NAME FROM MEMBER;
+SELECT * FROM MEMBER WHERE ID = 'admin';
+
+---------------------------------------------------------------------
+
+CREATE TABLE PRODUCT(
+	PNUM INT PRIMARY KEY,
+	NAME VARCHAR(15) NOT NULL,
+	CNT INT DEFAULT 10
+);
+
+SELECT * FROM PRODUCT;
+
+-- 데이터 삽입
+INSERT INTO PRODUCT VALUES(101, '목도리', 2);
+INSERT INTO PRODUCT (PNUM, NAME) VALUES (102, '장갑');
+--INSERT INTO PRODUCT (NAME, PNUM) VALUES ('장갑', 102);
+INSERT INTO PRODUCT (PNUM, NAME) VALUES (103, '장화');
+
+-- CNT가 5보다 크거나 같은 데이터 출력
+SELECT * FROM PRODUCT WHERE CNT >= 5;
+
+-- NAME이 '장갑'인 데이터 출력
+SELECT * FROM PRODUCT WHERE NAME = '장갑';
+SELECT * FROM PRODUCT WHERE NAME IN('장갑');
+
+-- NAME이 '장갑'이 아닌 데이터 출력
+SELECT * FROM PRODUCT WHERE NAME != '장갑';
+SELECT * FROM PRODUCT WHERE NAME NOT IN('장갑');
+
+-- NAME에 '장'이 포함된 데이터 출력
+SELECT * FROM PRODUCT WHERE NAME LIKE '%장%';
+
+-- 오름차순
+SELECT * FROM PRODUCT ORDER BY PNUM ASC;
+-- 내림차순
+SELECT * FROM PRODUCT ORDER BY PNUM DESC;
+
+-- 테이블 구조 변경중에서 [컬럼수정]
+-- ALTER TABLE 테이블명 MODIFY 컬럼명 변경할내용
+-- ALTER TABLE CUSTOMERS MODIFY ADDRESS VARCHAR2(20);
+
+-- 테이블 구조 변경중에서 [컬럼추가]
+-- ALTER TABLE 테이블명 ADD 컬럼명 추가할내용
+-- ALTER TABLE CUSTOMERS ADD PHONE VARCHAR2(20);
+
+-- 테이블 구조 변경중에서 [컬럼삭제]
+-- ALTER TABLE 테이블명 DROP COLUMN 컬럼명
+-- ALTER TABLE CUSTOMERS DROP COLUMN EMAIL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
