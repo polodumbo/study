@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>request 내장객체</title>
+</head>
+<body>
+
+	<form action="c_request_result.jsp" method="post">
+		<table border="1">
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>선택언어</td>
+				<td>
+					<select name="lang">
+						<option selected>JAVA</option>
+						<option>C언어</option>
+						<option>파이썬</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>관심분야</td>
+				<td>
+					<input type="checkbox" name="fav" value="웹">웹
+					<input type="checkbox" name="fav" value="앱">앱
+					<input type="checkbox" name="fav" value="빅데이터">빅데이터
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<input type="submit" value="결과 확인하기">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
