@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 
+	<bean class="test.ApplePhone" id="apple" lazy-init="true" >
+		<constructor-arg ref="aw" />
+		<constructor-arg value="1234" />
+	</bean>
+	
+	<bean class="test.KiwiPhone" id="kiwi">
+		<property name="watch" ref="kw" />
+		<property name="number" value="1234" />
+	</bean>
+	<bean class="test.AppleWatch" id="aw" lazy-init="true" />
+	<bean class="test.KiwiWatch" id="kw" lazy-init="true" />
+	<bean class="test.TestBean" id="tb">
+		<property name="map">
+			<map>
+				<entry>
+					<key><value>timo</value></key>
+					<value>1234</value>
+				</entry>
+				<entry>
+					<key><value>ari</value></key>
+					<value>123</value>
+				</entry>
+				<entry>
+					<key><value>hong</value></key>
+					<value>54321</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	<bean class="test.DaoBean" id="db">
+		<property name="datas">
+			<list>
+				<value>샘플 데이터</value>
+			</list>
+		</property>
+	</bean>
+	 -->
+	<bean class="prac.View" id="view" />
+	<bean class="prac.Model" id="model">
+		<property name="datas">
+			<list>
+				<value>티모</value>
+				<value>모르가나</value>
+				<value>오리아나</value>
+				<value>아무무</value>
+				<value>아리</value>
+			</list>
+		</property>
+	</bean>
+	<bean class="prac.Controller" id="app">
+		<property name="model" ref="model" />
+		<property name="view" ref="view" />
+	</bean>
+</beans>
