@@ -1,3 +1,4 @@
 # study
-qwr qwhirq1
+qwr
 adf
+adfa
