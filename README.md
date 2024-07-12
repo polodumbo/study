@@ -1,5 +1,2 @@
 # study
-wer
-asb
-zxc
-zbc
+qwr
