@@ -1,4 +1,3 @@
 # study
 tyu
-sdf
-xcv
+ghj
