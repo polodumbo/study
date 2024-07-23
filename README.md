@@ -1,4 +1,4 @@
 # study
-uio
+rty
 hjk
 bnm
