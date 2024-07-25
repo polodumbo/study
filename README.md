@@ -1,4 +1,2 @@
 # study
-uio
-hjk
-bnm
+qwe
