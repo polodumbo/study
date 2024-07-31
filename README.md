@@ -1,4 +1,3 @@
 # study
-rty
-fgh
+tyu
 xcv
