@@ -1,4 +1,4 @@
 # study
-ytr
+tre
 dsa
 vcx
