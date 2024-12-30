@@ -1,4 +1,4 @@
 # study
-rty
+tyu
 ghj
 bnm
