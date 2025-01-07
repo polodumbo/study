@@ -1,4 +1,4 @@
 # study
-tyu
+yui
 hjk
 nmn
