@@ -1,4 +1,4 @@
 # study
-yui
+uio
 hjk
 mnb
